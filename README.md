@@ -22,25 +22,10 @@ b = true
 
 ```
 
-
-## Arrays
-
 ```go
 
-var myArray [3]int
-myArray[0] = 10
-
-for i, v := range meuArray {
-    fmt.Printf("Index %d with value %d\n", i, v)
-}
-
-
-slicedArray := []int{1000, 2000, 3000, 4000}
-slicedArray = append(slicedArray, 5000)
-fmt.Printf("len=%d capacity=%d %v\n", len(slicedArray), cap(slicedArray), slicedArray)
-
-// capacidade = 8 apesar de 5 elementos.
-// Go dobra o tamanho do slice sempre que precisa redimensionar. Por isso tente trabalhar
-// com um slice próximo da capacidade que você vai trabalhar.
-
+// Precisa do go mod antes
+go mod init gofast  // gofast é o nome do projeto
+go get golang.org/x/exp/constraints
+go get github.com/google/uuid
 ```

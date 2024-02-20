@@ -23,6 +23,26 @@ func printArray() {
 	for i, v := range meuArray {
 		fmt.Printf("Index=%d Value=%d\n", i, v)
 	}
+
+	i := 0
+	for i < 10 {
+		if i > 1 && i < 3 {
+			println(i)
+		}
+		i++
+	}
+
+	switch i {
+	case 1:
+		println("A")
+	default:
+		println("SWITCH")
+	}
+
+	// LOOP INFINITO
+	// for {
+	// 	print("AQ!UI")
+	// }
 }
 
 func printSlicedArray() {
