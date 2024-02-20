@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"gofast/custommath/custommath"
+)
 
 func main() {
 	// No need to import because intro also declares itself belonging to main package
@@ -25,4 +28,7 @@ func main() {
 	fmt.Println("-----------------------------")
 	execGenerics()
 	fmt.Println("-----------------------------")
+
+	result := custommath.SomaCustomMath(10, 10)
+	println(result)
 }
