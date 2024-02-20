@@ -4,6 +4,10 @@
 - Variables declared in global scope are visible globally
 
 ```
+go env
+go env | grep GOOS
+go env | grep ARCH
+go tool dist list
 go run .
 ```
 
@@ -28,4 +32,19 @@ b = true
 go mod init gofast  // gofast é o nome do projeto
 go get golang.org/x/exp/constraints
 go get github.com/google/uuid
+```
+
+
+```go
+
+go build -o gofast .
+
+./gofast
+
+GOOS=windows go build -o gofastwin .
+GOOS=windows GOARC=arm go build -o gofastwin .
+
+GOOS=linux go build -o gofastlinux .
+
+GOOS=darwin go build -o gofastlinux .
 ```
